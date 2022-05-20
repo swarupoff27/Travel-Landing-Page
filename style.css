@@ -14,12 +14,12 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-li{
-    list-style: none; 
+li {
+    list-style: none;
 }
 
 a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
@@ -27,26 +27,30 @@ p {
     color: black;
     font-size: 16px;
     font-weight: 400;
-    line-height:24px;
+    line-height: 24px;
     margin: 30px 0;
 }
 
-.outermostcontainer{
+.outermostcontainer {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    /* border: 1px solid red; */
 }
 
 .outercontainer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    /* border: 1px solid red; */
+
 }
 
 .container {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+
 }
 
 .clearfix {
@@ -59,6 +63,14 @@ p {
 
 .right {
     float: right;
+}
+
+.fs24 {
+    font-size: 24px;
+}
+
+.fs16 {
+    font-size: 16px;
 }
 
 .fwreg {
@@ -87,15 +99,16 @@ p {
 }
 
 .rb {
-    border: 1px solid red;
+    border: 5px solid red;
 }
 
-.gb{
-    border: 1px solid rgb(1, 255, 1);
-    
+.gb {
+    border: 5px solid rgb(1, 255, 1);
+
 }
+
 .bb {
-    border: 1px solid blue;
+    border: 5px solid blue;
 }
 
 /* paragraphs */
@@ -124,7 +137,7 @@ p {
 h2 {
     color: #102746;
     /* display: inline; */
-    
+
 }
 
 h3 {
@@ -163,8 +176,8 @@ nav a {
     color: white;
 }
 
-.menu a{
-    margin:0 20px;
+.menu a {
+    margin: 0 20px;
 }
 
 .hero {
@@ -232,15 +245,16 @@ input:focus {
     outline: none !important;
 }
 
-button {
-    font-size: 24px;
-    font-weight: 500;
+.btn {
     color: white;
     background-color: #1b7dff;
     border-radius: 3px;
-    padding: 10px 30px;
-    margin: 30px 0 0 0;
     border: none;
+}
+
+.lg {
+    padding: 20px 55px;
+    margin: 30px 0 0 0;
 }
 
 button:hover {
@@ -249,69 +263,72 @@ button:hover {
 
 /* white */
 
-.benefits{
-    background-color:white;
-    -webkit-box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.5);
-box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.5);
-position: absolute;
-bottom:0;
-left:0;
-right:0;
-transform: translate(0%, 70%);
+.benefits {
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(0%, 70%);
 
 }
 
-.benefits h2{
+.benefits h2 {
     margin: 30px 0 60px 0;
 }
 
-.inspireddiv{
+.inspireddiv {
     margin: 20px 0;
 }
 
-.inspiredheading{
+.inspiredheading {
     width: 100%;
     border-bottom: 2px solid #f51c40;
     position: absolute;
-    width:5%
+    width: 5%
 }
 
-.cardheight{
-    height:300px;
-}
-.icons{
-    padding:30px 0;
+.cardheight {
+    height: 300px;
 }
 
-.marginboth20{
-    margin:0 20px;
+.icons {
+    padding: 30px 0;
 }
 
-.marginright20{
-    margin-right:20px;
+.marginboth20 {
+    margin: 0 20px;
 }
 
-.marginleft20{
-    margin-left:20px;
+.marginright20 {
+    margin-right: 20px;
+}
+
+.marginleft20 {
+    margin-left: 20px;
 }
 
 
-.benefitsbox{
+.benefitsbox {
     text-align: left;
-    width:280px;
+    width: 280px;
 }
 
-
-
-.section1{
+.section1 {
     margin-top: 400px;
 }
+
+/* .container1{
+    border: 1px solid red;
+    max-width: 1208px; 
+    margin: 0 auto;  
+} */
 .sections {
     width: 100%;
-    text-align: center;
     padding: 50px 10px;
-    margin-bottom: 0px;
 }
 
 .content {
@@ -331,17 +348,10 @@ transform: translate(0%, 70%);
     padding: 0px;
 }
 
-.twoimg {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-
 /* three images */
 
 .content .card3 {
-    width: 33.33%;
+    width: calc(100% / 3);
     padding: 5px;
 }
 
@@ -349,100 +359,275 @@ transform: translate(0%, 70%);
     padding: 0px;
 }
 
-.threeimg {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    
-}
 
 
 /* zig zag */
 
-.zzbox{
-    text-align:left;
-    margin: 0 45px;
-}
-
-.zzbox a{
-    font-size: 16px;
-}
-
-h3{
+h3 {
     font-size: 30px;
     font-weight: 500;
 }
 
-.zig, .zag{
+.content .card6 {
+    width: calc(100% / 3);
+
+}
+
+
+
+
+
+
+
+/* 20/5/2022 */
+
+/* inspired section */
+
+.outer {
+    width: 100%;
+}
+
+.hp {
+    height: 300px;
+    padding: 5px 5px;
+}
+
+.top {
+    width: 50%;
+}
+
+.bot {
+    width: 33.33%;
+}
+
+.outer h1 {
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+}
+
+.bgimage {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: 100% 100%;
+}
+
+.image1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image1.png');
+}
+
+.image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image2.png');
+}
+
+.image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image3.png');
+}
+
+.image4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image4.png');
+}
+
+.image5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image5.png');
+}
+
+/* inspired section */
+
+
+
+/* zigzag section */
+
+/* .container2{
+    border: 1px solid red;
+    max-width: 1208px; 
+    margin: 0 auto;  
+} */
+
+.inner {
+    display: flow-root;
+    width: 100%;
+    /* border: 5px solid blue; */
+    position: relative;
+    margin: 70px 0;
+}
+
+.zig {
+    width: 597px;
+    height: 354px;
+    object-fit: contain;
+    padding-right: 70px;
+}
+
+.zag {
+    width: 597px;
+    height: 354px;
+    object-fit: contain;
+    padding-left: 70px;
+}
+
+
+.imgdiv1 {
+    width: 50%;
+    height: 100%;
+    /* border:5px solid greenyellow; */
+    position: absolute;
+}
+
+.imgdiv2 {
+    width: 50%;
+    height: 100%;
+    /* border:5px solid greenyellow; */
+    position: absolute;
+    right: 0;
+
+}
+
+.textdiv {
+    /* border:5px solid greenyellow; */
+    width: 50%;
+    /* height: 100%; */
+    height: 354px;
+    padding: 40px 90px;
+}
+
+/* zigzag section */
+
+/* 6 pic layout */
+
+.botbar {
+    background-color: rgba(21, 24, 36, 0.6);
+    color: white;
+    padding: 10px 20px;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+
+}
+
+.botbar p {
+    display: inline;
+    color: white;
+}
+
+.bgimg {
+    height: 377px;
+    position: relative;
+}
+
+.hp6 {
+    width: 386px;
+    padding: 30px 30px;
+}
+
+.sm {
+    padding: 10px 10px;
+}
+
+.six {
+    width: calc(100% / 3);
+}
+
+
+.img1 {
+    height: 377px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img1.png');
+}
+
+.img2 {
+    height: 377px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img2.png');
+}
+
+.img3 {
+    height: 377px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img3.png');
+}
+
+.img4 {
+    height: 377px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img4.png');
+}
+
+.img5 {
+    height: 377px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img5.png');
+}
+
+.img6 {
+    height: 377px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img6.png');
+}
+
+/* 6 pic layout */
+
+
+
+/* video section */
+
+.video {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/video.png");
+    height: 609px;
     width: 100%;
     position: relative;
-    margin-bottom: 70px;
 }
 
-.zig1{
+.play {
     position: absolute;
-    top: 20%;
-    right: 0;
-    bottom: 20%;  
-}
-
-.zag1{
-    position: absolute;
-    top: 15%;
-    left: 0;
-    bottom: 15%;
-
-     
-}
-
-.cards{
-    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
-.content .card6 {
-    width: 33.33%;
-    padding: 25px;
-}
+/* video section */
 
+/* footer */
 
-.video img{
-    height: 100%;
-    width: 100%;
-    object-fit:contain;
-
-}
-
-footer, .footerdiv{
+footer,
+.footerdiv {
     background-color: #0e1d28;
     height: 370px;
     position: relative;
     width: 80%;
     margin: 0 auto;
-    
+
 }
 
-.footerlogo{
+.footerlogo {
     width: 50%;
     position: absolute;
     top: 50%;
     left: 0%;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
 }
 
-.footerlogo img{
+.footerlogo img {
     width: 20%;
 }
 
-.footerright{
+.footerright {
     width: 50%;
     position: absolute;
     top: 50%;
     left: 75%;
-    right:0%;
-    transform: translate(-50%,-50%);
+    right: 0%;
+    transform: translate(-50%, -50%);
 }
 
-.footerlist{
+.footerlist {
     width: 33.33%;
 }
+
+
+/* footer */
