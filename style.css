@@ -35,6 +35,7 @@ p {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0;
     /* border: 1px solid red; */
 }
 
@@ -42,6 +43,7 @@ p {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
     /* border: 1px solid red; */
 
 }
@@ -50,7 +52,7 @@ p {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-
+    padding: 0;
 }
 
 .clearfix {
@@ -99,16 +101,16 @@ p {
 }
 
 .rb {
-    border: 5px solid red;
+    border: 2px solid red;
 }
 
 .gb {
-    border: 5px solid rgb(1, 255, 1);
+    border: 3px solid rgb(1, 255, 1);
 
 }
 
 .bb {
-    border: 5px solid blue;
+    border: 2px solid blue;
 }
 
 /* paragraphs */
@@ -264,6 +266,7 @@ button:hover {
 /* white */
 
 .benefits {
+    width: 100%;
     background-color: white;
     -webkit-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
@@ -280,36 +283,27 @@ button:hover {
     margin: 30px 0 60px 0;
 }
 
-.inspireddiv {
+.h2div {
     margin: 20px 0;
 }
 
-.inspiredheading {
+.content {
     width: 100%;
-    border-bottom: 2px solid #f51c40;
-    position: absolute;
-    width: 5%
 }
 
-.cardheight {
-    height: 300px;
+.card3{
+    width: calc((100% - 160px / 3));  
 }
 
-.icons {
-    padding: 30px 0;
+.card3:nth-child(1), .card3:nth-child(2) {
+   margin-right: 80px;
 }
 
-.marginboth20 {
-    margin: 0 20px;
-}
-
-.marginright20 {
-    margin-right: 20px;
-}
-
-.marginleft20 {
-    margin-left: 20px;
-}
+.icons { 
+    width: 65px;
+    height: 65px;
+    margin-bottom: 37px;
+} 
 
 
 .benefitsbox {
@@ -318,46 +312,14 @@ button:hover {
 }
 
 .section1 {
-    margin-top: 400px;
+    margin-top: 400px; 
 }
 
-/* .container1{
-    border: 1px solid red;
-    max-width: 1208px; 
-    margin: 0 auto;  
-} */
 .sections {
     width: 100%;
     padding: 50px 10px;
 }
 
-.content {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
-/* two images */
-
-.content .card2 {
-    width: 50%;
-    padding: 5px;
-}
-
-.content .card2 .box2 {
-    padding: 0px;
-}
-
-/* three images */
-
-.content .card3 {
-    width: calc(100% / 3);
-    padding: 5px;
-}
-
-.content .card3 .box3 {
-    padding: 0px;
-}
 
 
 
@@ -385,19 +347,7 @@ h3 {
 
 .outer {
     width: 100%;
-}
-
-.hp {
-    height: 300px;
-    padding: 5px 5px;
-}
-
-.top {
-    width: 50%;
-}
-
-.bot {
-    width: 33.33%;
+    font-size: 0;
 }
 
 .outer h1 {
@@ -409,18 +359,28 @@ h3 {
     color: white;
 }
 
-.bgimage {
+.topby2{
+    width:calc((100% - 10px) / 2);
+}
+
+.botby3{
+    width:calc((100% - 20px) / 3);
+}
+
+.bgimage{
     position: relative;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+    height: 354px;
     background-repeat: no-repeat;
     object-fit: contain;
     background-size: 100% 100%;
 }
 
+.bot{
+    margin-top: 10px;
+}
+
 .image1 {
+    margin-right:10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image1.png');
 }
 
@@ -429,16 +389,23 @@ h3 {
 }
 
 .image3 {
+    margin-right:10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image3.png');
 }
 
 .image4 {
+    margin-right:10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image4.png');
 }
 
 .image5 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image5.png');
-}
+} 
+
+
+/* 23/5/22 */
+
+
 
 /* inspired section */
 
@@ -446,11 +413,6 @@ h3 {
 
 /* zigzag section */
 
-/* .container2{
-    border: 1px solid red;
-    max-width: 1208px; 
-    margin: 0 auto;  
-} */
 
 .inner {
     display: flow-root;
@@ -503,11 +465,23 @@ h3 {
 
 /* 6 pic layout */
 
+.cards-top-row{
+    width: 100%;
+    font-size: 0;
+}
+
+.cards-bot-row{
+  margin-top: 58px;
+}
+
+.three{
+    width: calc((100% - 116px) / 3);
+}
+
 .botbar {
     background-color: rgba(21, 24, 36, 0.6);
     color: white;
     padding: 10px 20px;
-    /* border: 1px solid red; */
     position: absolute;
     bottom: 0%;
     left: 0;
@@ -520,24 +494,15 @@ h3 {
     color: white;
 }
 
-.bgimg {
-    height: 377px;
-    position: relative;
-}
+
 
 .hp6 {
-    width: 386px;
-    padding: 30px 30px;
+    margin-right: 58px;
 }
 
 .sm {
     padding: 10px 10px;
 }
-
-.six {
-    width: calc(100% / 3);
-}
-
 
 .img1 {
     height: 377px;
