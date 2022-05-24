@@ -8,15 +8,17 @@
     <title>Travel Landing Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header>
-        <nav class="clearfix container">
-            <div class="left">
-                <a href="javascript:void(0)"><img src="images/odigo-logo.png" alt="logo"></a>
-            </div>
-            <ul class="menu right fwreg">
+    <header class="">
+        <nav class="clearfix container ">
+            <a class="logo left " href="javascript:void(0)"><img src="images/odigo-logo.png" alt="logo"></a>
+
+            <ul class="menu fwreg  right ">
                 <li><a href="javascript:void(0)">Articles</a></li>
                 <li><a href="javascript:void(0)">Locations</a></li>
                 <li><a href="javascript:void(0)">Videos</a></li>
@@ -36,13 +38,17 @@
                     gorgeous with belly side up i could pee on this if i had the energy but under the bed, for
                     attack
                     the child, open the door, </p>
-                <form action="/action_page.php">
-                    <label for="fname">O</label>&nbsp;&nbsp;&nbsp;
-                    <input type="text" id="" name="" placeholder="What would you like to do?">
-                    <label for="fname">O</label>&nbsp;&nbsp;&nbsp;
-                    <input type="text" id="" name=""
-                        placeholder="Where would you like to go?">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="btn lg fs24 fwmed" type="button" onclick="(alert('hello'))">SEARCH</button>
+                <form class="clearfix" action="/action_page.php">
+                    <div class="forms left ">
+                        <label for="fname"><i class="fa-regular fa-circle"></i></label>
+                        <input type="text" id="" name="" placeholder="What would you like to do?">
+                    </div>
+                    <div class="forms left ">
+                        <label for="fname"><i class="fa-regular fa-circle"></i></label>
+                        <input type="text" id="" name=""
+                            placeholder="Where would you like to go?">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <button class="btn lg fs24 fwmed left " type="button" onclick="(alert('hello'))">SEARCH</button>
 
                 </form>
             </div>
@@ -52,61 +58,57 @@
 
             <!-- benefit section -->
             <div class="benefits sections outercontainer ">
-                <div class="container">
-                    <div class=" clearfix ">
-                        <h2 class="darkblue left ">Benefits of Odigo</h2>
+                <div class="container clearfix">
+
+                    <h2 class="darkblue ">Benefits of Odigo</h2>
+
+
+
+                    <div class="cards card3  left benefitsbox ">
+                        <img class="icons" src="images/icon1.jpg" alt="icon1">
+                        <h4>Welcome to Odigo!</h4>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests
+                            come over.</p>
+                        <a class="blue" href="javascript:void(0)">LEARN MORE <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="#006dfe" class="bi bi-arrow-right" viewBox="0 0 16 10">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                </path>
+                            </svg></a>
                     </div>
 
 
-                    <div class="content clearfix ">
 
+                    <div class="cards card3 left benefitsbox  ">
+                        <img class="icons" src="images/icon2.jpg" alt="icon2">
+                        <h4>Your Personal Japan Guide</h4>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests
+                            come over.</p>
 
-                        <div class="card3 cardheight left benefitsbox box3">
-                            <img class="icons" src="images/icon1.jpg" alt="icon1">
-                            <h4>Welcome to Odigo!</h4>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests
-                                come over.</p>
-                            <a class="blue learnmore" href="javascript:void(0)">LEARN MORE <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006dfe"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 10">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-                                    </path>
-                                </svg></a>
-                        </div>
-
-
-
-                        <div class="card3 cardheight left benefitsbox box3 ">
-                            <img class="icons" src="images/icon2.jpg" alt="icon2">
-                            <h4>Your Personal Japan Guide</h4>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests
-                                come over.</p>
-                            <a class="blue learnmore" href="javascript:void(0)">LEARN MORE <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006dfe"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 10">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-                                    </path>
-                                </svg></a>
-                        </div>
-
-
-
-                        <div class="card3 cardheight left benefitsbox box3 ">
-                            <img class="icons" src="images/icon3.jpg" alt="icon3">
-                            <h4>Promoting Local Businesses</h4>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests
-                                come over.</p>
-                            <a class="blue learnmore" href="javascript:void(0)">LEARN MORE <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006dfe"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 10">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-                                    </path>
-                                </svg></a>
-                        </div>
+                        <a class=" blue " href="javascript:void(0)">LEARN MORE <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="#006dfe" class="bi bi-arrow-right" viewBox="0 0 16 10">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                </path>
+                            </svg></a>
                     </div>
+
+
+
+                    <div class=" card3  left benefitsbox ">
+                        <img class="icons" src="images/icon3.jpg" alt="icon3">
+                        <h4>Promoting Local Businesses</h4>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests
+                            come over.</p>
+                        <a class="blue learnmore" href="javascript:void(0)">LEARN MORE <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006dfe"
+                                class="bi bi-arrow-right" viewBox="0 0 16 10">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                </path>
+                            </svg></a>
+                    </div>
+
                 </div>
             </div>
             <!-- benefit section -->
@@ -123,47 +125,46 @@
 
 
             <!-- inspired section -->
+            <div class="section1 sections outercontainer ">
 
-            <div class="section1 sections ">
-                <div class="inspired outercontainer ">
+                <div class="h2div clearfix  ">
+                    <h2 class="darkblue left ">Get inspired for your next trip</h2>
 
-                    <div class="h2div clearfix ">
-                        <h2 class=" darkblue left">Get inspired for your next trip</h2>
-                        <a class="blue right" href="javascript:void(0)">VIEW ALL <svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="#006dfe" class="bi bi-arrow-right" viewBox="0 0 16 10">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-                                </path>
-                            </svg></a>
+                    <a class="blue right  " href="javascript:void(0)">VIEW ALL <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="#006dfe" class="bi bi-arrow-right" viewBox="0 0 16 10">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                            </path>
+                        </svg></a>
+
+                </div>
+
+                <div class="top outer clearfix">
+
+                    <div class="topby2 left bgimage image1">
+                        <h1>Mount Fuji</h1>
                     </div>
 
-                    <div class="top outer clearfix">
-
-                        <div class="topby2 left bgimage image1">
-                            <h1>Mount Fuji</h1>
-                        </div>
-
-                        <div class="topby2 right bgimage image2">
-                            <h1>Kyoto</h1>
-                        </div>
-
+                    <div class="topby2 right bgimage image2">
+                        <h1>Kyoto</h1>
                     </div>
 
-                    <div class="bot outer clearfix">
+                </div>
 
-                        <div class="botby3 left bgimage image3">
-                            <h1>Tokyo</h1>
-                        </div>
+                <div class="bot outer clearfix">
 
-                        <div class="botby3 left bgimage image4">
-                            <h1>Niigata</h1>
-                        </div>
-
-                        <div class="botby3 left bgimage image5">
-                            <h1>Sapporo</h1>
-                        </div>
-
+                    <div class="botby3 left bgimage image3">
+                        <h1>Tokyo</h1>
                     </div>
+
+                    <div class="botby3 left bgimage image4">
+                        <h1>Niigata</h1>
+                    </div>
+
+                    <div class="botby3 left bgimage image5">
+                        <h1>Sapporo</h1>
+                    </div>
+
                 </div>
             </div>
 
@@ -173,271 +174,189 @@
 
 
             <!-- zig zag -->
-            <div class="sections">
-                <div class="outercontainer ">
-                    <div class="inner ">
-                        <div class="imgdiv1 left">
-                            <img class="zig"
-                                src="https://github.com/swarupoff27/Travel-Landing-Page/blob/master/images/zig1.png?raw=true"
-                                alt="">
-                        </div>
 
-                        <div class="textdiv right">
-                            <h1>Prefecture in Focus: Tottori</h1>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                                Being
-                                gorgeous with belly side up i could pee on this if i had the energy but under the bed,
-                                for
-                                attack the child, open the door, </p>
-                            <a class="blue learnmore" href="javascript:void(0)">VIEW PREFECTURE <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006dfe"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 10">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-                                    </path>
-                                </svg></a>
-                        </div>
+            <div class=" sections outercontainer">
+                <div class="zig1div outer clearfix ">
+
+                    <div class="zigtopby2 left  ">
+                        <img class="zig1" src="images/zig1.png" alt="">
                     </div>
 
-                    <div class="inner ">
-
-                        <div class="textdiv left">
-                            <h1>Featured Neighborhood: Kyoto’s Arashiyama</h1>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                                Being
-                                gorgeous with belly side up i could pee on this if i had the energy but under the bed,
-                                for
-                                attack the child, open the door, </p>
-                            <a class="blue learnmore" href="javascript:void(0)">VIEW PREFECTURE <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006dfe"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 10">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-                                    </path>
-                                </svg></a>
-                        </div>
-
-
-                        <div class="imgdiv2 right">
-                            <img class="zag"
-                                src="https://github.com/swarupoff27/Travel-Landing-Page/blob/master/images/zig2.png?raw=true"
-                                alt="">
-                        </div>
-
-
+                    <div class="textdiv1 zigtopby2 right ">
+                        <h3>Prefecture in Focus: Tottori</h3>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being
+                            gorgeous with belly side up i could pee on this if i had the energy but under the bed,
+                            for
+                            attack the child, open the door, </p>
+                        <a class="blue " href="javascript:void(0)">VIEW PREFECTURE <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006dfe"
+                                class="bi bi-arrow-right" viewBox="0 0 16 10">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                </path>
+                            </svg></a>
                     </div>
+
                 </div>
+
+                <div class="zig2div outer clearfix ">
+
+                    <div class="textdiv2 zigtopby2 left ">
+                        <h3>Featured Neighborhood: Kyoto’s Arashiyama</h3>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being
+                            gorgeous with belly side up i could pee on this if i had the energy but under the bed,
+                            for
+                            attack the child, open the door, </p>
+                        <a class="blue " href="javascript:void(0)">VIEW PREFECTURE <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006dfe"
+                                class="bi bi-arrow-right" viewBox="0 0 16 10">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                </path>
+                            </svg></a>
+                    </div>
+
+                    <div class="zigtopby2 right">
+                        <img class="zig2" src="images/zig2.png" alt="">
+                    </div>
+
+                </div>
+
             </div>
+
             <!-- zig zag -->
+
+
 
 
             <!-- top places -->
 
-            <div class="sections ">
-                <div class="outercontainer ">
+            <div class=" sections outercontainer ">
 
-                    <div class="h2div clearfix ">
-                        <h2 class=" darkblue left">Today top places to visit</h2>
+                <div class="h2div clearfix ">
+                    <h2 class=" darkblue left">Today top places to visit</h2>
+                </div>
+
+                <div class="cards-top-row clearfix ">
+                    <div class="three hp6 left ">
+                        <div class="bgimage img1 ">
+                            <div class="botbar">
+                                <p>NAGOYA</p>
+                                <div class="right">
+                                    <p>221<i class="fa-solid fa-heart"></i></p>
+                                    <p>50<i class="fa-solid fa-message"></i></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
+                            over.
+                            Being gorgeous with belly side up i could pee on this.</p>
+                        <button class="btn sm fs16 fwreg">SEE MORE</button>
                     </div>
 
-
-
-                    <div class="cards-top-row clearfix">
-                        <div class="three hp6 left ">
-                            <div class="bgimage img1 ">
-                                <div class="botbar">
-                                    <p>NAGOYA</p>
-                                    <div class="right">
-                                        <p>221 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z">
-                                                </path>
-                                            </svg></p>&nbsp&nbsp
-                                        <p>50 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-chat-right-text-fill"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z">
-                                                </path>
-                                            </svg></p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
-                                over.
-                                Being gorgeous with belly side up i could pee on this.</p>
-                            <button class="btn sm fs16 fwreg">SEE MORE</button>
-                        </div>
-
-                        <div class="three hp6 left ">
-                            <div class="bgimage img2 ">
-                                <div class="botbar">
-                                    <p>NIIGATA</p>
-                                    <div class="right">
-                                        <p>221 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z">
-                                                </path>
-                                            </svg></p>&nbsp&nbsp
-                                        <p>50 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-chat-right-text-fill"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z">
-                                                </path>
-                                            </svg></p>
-                                    </div>
+                    <div class="three hp6 left ">
+                        <div class="bgimage img2 ">
+                            <div class="botbar">
+                                <p>NIIGATA</p>
+                                <div class="right">
+                                    <p>221<i class="fa-solid fa-heart"></i></p>
+                                    <p>50<i class="fa-solid fa-message"></i></p>
                                 </div>
                             </div>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
-                                over.
-                                Being gorgeous with belly side up i could pee on this.</p>
-                            <button class="btn sm fs16 fwreg">SEE MORE</button>
-
                         </div>
-
-                        <div class="three left ">
-                            <div class="bgimage img3 ">
-                                <div class="botbar">
-                                    <p>OSAKA</p>
-                                    <div class="right">
-                                        <p>221 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z">
-                                                </path>
-                                            </svg></p>&nbsp&nbsp
-                                        <p>50 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-chat-right-text-fill"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z">
-                                                </path>
-                                            </svg></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
-                                over.
-                                Being gorgeous with belly side up i could pee on this.</p>
-                            <button class="btn sm fs16 fwreg">SEE MORE</button>
-
-                        </div>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
+                            over.
+                            Being gorgeous with belly side up i could pee on this.</p>
+                        <button class="btn sm fs16 fwreg">SEE MORE</button>
 
                     </div>
 
-
-
-                    <div class="cards-bot-row clearfix">
-                        <div class="three hp6 left ">
-                            <div class="bgimage img4 ">
-                                <div class="botbar">
-                                    <p>SAITAMA</p>
-                                    <div class="right">
-                                        <p>221 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z">
-                                                </path>
-                                            </svg></p>&nbsp&nbsp
-                                        <p>50 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-chat-right-text-fill"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z">
-                                                </path>
-                                            </svg></p>
-                                    </div>
+                    <div class="three left ">
+                        <div class="bgimage img3 ">
+                            <div class="botbar">
+                                <p>OSAKA</p>
+                                <div class="right">
+                                    <p>221<i class="fa-solid fa-heart"></i></p>
+                                    <p>50<i class="fa-solid fa-message"></i></p>
                                 </div>
                             </div>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
-                                over.
-                                Being gorgeous with belly side up i could pee on this.</p>
-                            <button class="btn sm fs16 fwreg">SEE MORE</button>
-
                         </div>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
+                            over.
+                            Being gorgeous with belly side up i could pee on this.</p>
+                        <button class="btn sm fs16 fwreg">SEE MORE</button>
 
-                        <div class="three hp6 left ">
-                            <div class="bgimage img5 ">
-                                <div class="botbar">
-                                    <p>UENO</p>
-                                    <div class="right">
-                                        <p>221 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z">
-                                                </path>
-                                            </svg></p>&nbsp&nbsp
-                                        <p>50 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-chat-right-text-fill"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z">
-                                                </path>
-                                            </svg></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
-                                over.
-                                Being gorgeous with belly side up i could pee on this.</p>
-                            <button class="btn sm fs16 fwreg">SEE MORE</button>
-
-                        </div>
-
-                        <div class="three left ">
-                            <div class="bgimage img6 ">
-                                <div class="botbar">
-                                    <p>SHIBUYA</p>
-                                    <div class="right">
-                                        <p>221 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z">
-                                                </path>
-                                            </svg></p>&nbsp&nbsp
-                                        <p>50 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-chat-right-text-fill"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z">
-                                                </path>
-                                            </svg></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
-                                over.
-                                Being gorgeous with belly side up i could pee on this.</p>
-                            <button class="btn sm fs16 fwreg">SEE MORE</button>
-
-                        </div>
                     </div>
 
                 </div>
+
+
+
+                <div class="cards-bot-row clearfix">
+                    <div class="three hp6 left ">
+                        <div class="bgimage img4 ">
+                            <div class="botbar">
+                                <p>SAITAMA</p>
+                                <div class="right">
+                                    <p>221<i class="fa-solid fa-heart"></i></p>
+                                    <p>50<i class="fa-solid fa-message"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
+                            over.
+                            Being gorgeous with belly side up i could pee on this.</p>
+                        <button class="btn sm fs16 fwreg">SEE MORE</button>
+
+                    </div>
+
+                    <div class="three hp6 left ">
+                        <div class="bgimage img5 ">
+                            <div class="botbar">
+                                <p>UENO</p>
+                                <div class="right">
+                                    <p>221<i class="fa-solid fa-heart"></i></p>
+                                    <p>50<i class="fa-solid fa-message"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
+                            over.
+                            Being gorgeous with belly side up i could pee on this.</p>
+                        <button class="btn sm fs16 fwreg">SEE MORE</button>
+
+                    </div>
+
+                    <div class="three left ">
+                        <div class="bgimage img6 ">
+                            <div class="botbar">
+                                <p>SHIBUYA</p>
+                                <div class="right">
+                                    <p>221<i class="fa-solid fa-heart"></i></p>
+                                    <p>50<i class="fa-solid fa-message"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
+                            over.
+                            Being gorgeous with belly side up i could pee on this.</p>
+                        <button class="btn sm fs16 fwreg">SEE MORE</button>
+
+                    </div>
+                </div>
+
             </div>
+
             <!-- top places -->
 
 
             <!-- video section -->
-            <section class="outermostcontainer">
-                <div class="video ">
-                    <a href="javascript:void(0)">
-                        <svg class="play" xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="white"
-                            class="bi bi-play-btn" viewBox="0 0 16 16">
-                            <path
-                                d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z">
-                            </path>
-                            <path
-                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </section>
+            <div class="video ">
+                <a href="javascript:void(0)"><i class="play fa fa-circle-play fa-7x"></i></a>
+            </div>
             <!-- video section -->
 
 
@@ -445,43 +364,45 @@
         </section>
     </main>
 
-    <footer class="outermostcontainer">
-        <div class="footerdiv clearfix ">
-            <div class="footerlogo left ">
-                <img src="images/odigo-logo.png" alt="">
+    <footer>
+        <div class="container footerdiv clearfix ">
+            <a  href="javascript:void(0)"><img class="footlogo left " src="images/odigo-logo.png" alt=""></a>
+
+            <div class="footersection  clearfix">
+
+                <div class="foot left ">
+                    <ul>
+                        <a href="javascript:void(0)"><li>Company</li></a>
+                        <a href="javascript:void(0)"><li>About</li></a>
+                        <a href="javascript:void(0)"><li>Team</li></a>
+                        <a href="javascript:void(0)"><li>Careers</li></a>
+                        <a href="javascript:void(0)"><li>Privacy Policy</li></a>
+                        
+                    </ul>
+                </div>
+                <div class="foot left ">
+                    <ul>
+                        <a href="javascript:void(0)"><li>Locations</li></a>
+                        <a href="javascript:void(0)"><li>Tokyo</li></a>
+                        <a href="javascript:void(0)"><li>Kyoto</li></a>
+                        <a href="javascript:void(0)"><li>Osaka</li></a>
+                        <a href="javascript:void(0)"><li>Hokkaido</li></a>
+                        
+                    </ul>
+                </div>
+                <div class="foot left ">
+                    <ul>
+                        <a href="javascript:void(0)"><li>Social Media</li></a>
+                        <a href="javascript:void(0)"><li>Facebook </li></a>
+                        <a href="javascript:void(0)"><li>Twitter</li></a>
+                        <a href="javascript:void(0)"><li>Instagram</li></a>
+                        <a href="javascript:void(0)"><li>Youtube</li></a>
+                        
+                    </ul>
+                </div>
+    
             </div>
-            <div class="footerright  left  clearfix">
-                <div class="footerlist left ">
-                    <ul>
-                        <li><a href="javascript:void(0)">Company</a></li>
-                        <li><a href="javascript:void(0)">About</a></li>
-                        <li><a href="javascript:void(0)">Team</a></li>
-                        <li><a href="javascript:void(0)">Careers</a></li>
-                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footerlist left">
-                    <ul>
-                        <li><a href="javascript:void(0)">Locations</a></li>
-                        <li><a href="javascript:void(0)">Tokyo</a></li>
-                        <li><a href="javascript:void(0)">Kyoto</a></li>
-                        <li><a href="javascript:void(0)">Osaka</a></li>
-                        <li><a href="javascript:void(0)">Hokkaido</a></li>
-                    </ul>
-                </div>
-                <div class="left ">
-                    <ul>
-                        <li><a href="javascript:void(0)">Social Media</a></li>
-                        <li><a href="javascript:void(0)">Facebook</a></li>
-                        <li><a href="javascript:void(0)">Twitter</a></li>
-                        <li><a href="javascript:void(0)">Instagram</a></li>
-                        <li><a href="javascript:void(0)">Youtube</a></li>
-                    </ul>
-                </div>
-            </div>
-
-
-
+             
         </div>
     </footer>
 

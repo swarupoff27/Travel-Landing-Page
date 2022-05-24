@@ -10,6 +10,7 @@
 
 html,
 body {
+
     width: 100%;
     font-family: 'Lato', sans-serif;
 }
@@ -28,7 +29,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 .outermostcontainer {
@@ -50,7 +51,7 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0;
 }
@@ -91,6 +92,8 @@ p {
     color: white;
 }
 
+
+
 .blue {
     color: #006dfe;
 }
@@ -100,17 +103,25 @@ p {
     color: #102746;
 }
 
+.h2div a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
 .rb {
-    border: 2px solid red;
+    outline: 2px solid red;
 }
 
 .gb {
-    border: 3px solid rgb(1, 255, 1);
+    outline: 3px solid rgb(1, 255, 1);
 
 }
 
 .bb {
-    border: 2px solid blue;
+    outline: 2px solid blue;
 }
 
 /* paragraphs */
@@ -138,7 +149,6 @@ p {
 
 h2 {
     color: #102746;
-    /* display: inline; */
 
 }
 
@@ -155,12 +165,25 @@ header {
     width: 100%;
     position: absolute;
     z-index: 1;
-    margin: 40px 0;
+    margin-top: 40px;
+}
 
+.logo {
+
+    width: 82px;
+    height: 31px;
 }
 
 nav {
-    padding: 20px 0;
+    position: relative;
+}
+
+nav ul {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: -50%;
+    transform: translate(0%, -50%);
 }
 
 
@@ -169,18 +192,19 @@ nav li {
     display: inline-block;
 }
 
-nav div a {
-    font-size: 22px;
-}
-
 nav a {
     font-size: 18px;
     color: white;
 }
 
 .menu a {
-    margin: 0 20px;
+    margin-left: 82px;
 }
+
+/* header */
+
+
+/* hero */
 
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/hero.png');
@@ -188,16 +212,20 @@ nav a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     object-fit: contain;
-    height: 130vh;
+    width: 100%;
+    height: 770px;
+    margin: 0 auto;
+    /* height: 130vh; */
     /* height: 100vh; */
     /* height: 100%; */
     position: relative;
 }
 
+
 .middle {
     width: 100%;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -209,28 +237,34 @@ nav a {
 
 .middle p {
     width: 50%;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
-.bullet {
-    height: 20px;
-    width: 50px;
-    border-radius: 50%;
-    border-top: 2px solid white;
-    /* background-color: white; */
+form {
+    margin-top: 60px;
+}
+
+.forms::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 85%;
+    height: 3px;
 }
 
 label {
+    margin-right: 10px;
     color: white;
 }
 
 input {
+    margin-right: 50px;
     color: white;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
     border: none;
-    width: 300px;
+    width: 250px;
     height: 60px;
     background: transparent;
 }
@@ -255,8 +289,8 @@ input:focus {
 }
 
 .lg {
-    padding: 20px 55px;
-    margin: 30px 0 0 0;
+    font-size: 24px;
+    padding: 10px 25px;
 }
 
 button:hover {
@@ -271,48 +305,55 @@ button:hover {
     -webkit-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translate(0%, 70%);
+    transform: translate(0%, 135%);
 
 }
 
 .benefits h2 {
-    margin: 30px 0 60px 0;
+    margin: 0 0 60px 0;
 }
 
 .h2div {
+    position: relative;
     margin: 20px 0;
 }
+
 
 .content {
     width: 100%;
 }
 
-.card3{
-    width: calc((100% - 160px / 3));  
+.card3 {
+    width: calc((100% - 260px / 3));
 }
 
-.card3:nth-child(1), .card3:nth-child(2) {
-   margin-right: 80px;
+.cards {
+    margin-right: 130px;
 }
 
-.icons { 
+.card3 p {
+    margin-bottom: 50px;
+}
+
+.icons {
     width: 65px;
     height: 65px;
     margin-bottom: 37px;
-} 
+}
 
 
 .benefitsbox {
     text-align: left;
     width: 280px;
+
 }
 
 .section1 {
-    margin-top: 400px; 
+    margin-top: 400px;
 }
 
 .sections {
@@ -322,32 +363,26 @@ button:hover {
 
 
 
-
-/* zig zag */
-
-h3 {
-    font-size: 30px;
-    font-weight: 500;
-}
-
 .content .card6 {
     width: calc(100% / 3);
 
 }
 
 
+.h2div h2::after {
+    content: "";
+    display: block;
+    background-color: #006dfe;
+    height: 3px;
+    width: 55%;
+}
 
-
-
-
-
-/* 20/5/2022 */
 
 /* inspired section */
 
 .outer {
     width: 100%;
-    font-size: 0;
+    /* font-size: 0; */
 }
 
 .outer h1 {
@@ -359,15 +394,15 @@ h3 {
     color: white;
 }
 
-.topby2{
-    width:calc((100% - 10px) / 2);
+.topby2 {
+    width: calc((100% - 10px) / 2);
 }
 
-.botby3{
-    width:calc((100% - 20px) / 3);
+.botby3 {
+    width: calc((100% - 20px) / 3);
 }
 
-.bgimage{
+.bgimage {
     position: relative;
     height: 354px;
     background-repeat: no-repeat;
@@ -375,12 +410,12 @@ h3 {
     background-size: 100% 100%;
 }
 
-.bot{
+.bot {
     margin-top: 10px;
 }
 
 .image1 {
-    margin-right:10px;
+    margin-right: 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image1.png');
 }
 
@@ -389,22 +424,18 @@ h3 {
 }
 
 .image3 {
-    margin-right:10px;
+    margin-right: 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image3.png');
 }
 
 .image4 {
-    margin-right:10px;
+    margin-right: 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image4.png');
 }
 
 .image5 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/image5.png');
-} 
-
-
-/* 23/5/22 */
-
+}
 
 
 /* inspired section */
@@ -413,94 +444,117 @@ h3 {
 
 /* zigzag section */
 
+.zig1 {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    margin-right: 50px;
+}
+
+.zig2 {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.zig1div {
+    position: relative;
+}
+
+.zig2div {
+    position: relative;
+    margin-top: 80px;
+}
+
+.zigtopby2 {
+    width: calc((100% - 80px) / 2);
+}
+
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
 
 .inner {
     display: flow-root;
     width: 100%;
-    /* border: 5px solid blue; */
     position: relative;
     margin: 70px 0;
 }
 
-.zig {
-    width: 597px;
-    height: 354px;
-    object-fit: contain;
-    padding-right: 70px;
-}
 
-.zag {
-    width: 597px;
-    height: 354px;
-    object-fit: contain;
-    padding-left: 70px;
-}
-
-
-.imgdiv1 {
-    width: 50%;
-    height: 100%;
-    /* border:5px solid greenyellow; */
+.textdiv1 {
+    padding: 50px;
     position: absolute;
-}
-
-.imgdiv2 {
-    width: 50%;
-    height: 100%;
-    /* border:5px solid greenyellow; */
-    position: absolute;
+    top: 0;
+    bottom: 0;
     right: 0;
+    margin: auto;
 
 }
 
-.textdiv {
-    /* border:5px solid greenyellow; */
-    width: 50%;
-    /* height: 100%; */
-    height: 354px;
-    padding: 40px 90px;
+.textdiv2 {
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+.textdiv1 p,
+.textdiv2 p {
+    margin-bottom: 40px;
 }
 
 /* zigzag section */
 
+
+
 /* 6 pic layout */
 
-.cards-top-row{
+.cards-top-row {
     width: 100%;
     font-size: 0;
 }
 
-.cards-bot-row{
-  margin-top: 58px;
+.cards-bot-row {
+    margin-top: 58px;
 }
 
-.three{
+.three {
     width: calc((100% - 116px) / 3);
 }
 
 .botbar {
     background-color: rgba(21, 24, 36, 0.6);
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0 10px 10px;
     position: absolute;
     bottom: 0%;
     left: 0;
     right: 0;
-
 }
 
 .botbar p {
+    margin-right: 20px;
     display: inline;
     color: white;
 }
 
+.botbar i {
+    margin-left: 5px;
 
+}
 
 .hp6 {
     margin-right: 58px;
 }
 
 .sm {
+    margin-top: 31px;
     padding: 10px 10px;
 }
 
@@ -541,7 +595,10 @@ h3 {
 /* video section */
 
 .video {
+    margin-top: 150px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/video.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: 609px;
     width: 100%;
     position: relative;
@@ -554,45 +611,49 @@ h3 {
     transform: translate(-50%, -50%);
 }
 
-
 /* video section */
 
 /* footer */
 
 footer,
 .footerdiv {
+
     background-color: #0e1d28;
     height: 370px;
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 
 }
 
-.footerlogo {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-}
-
-.footerlogo img {
+.footer a {
     width: 20%;
 }
 
-.footerright {
-    width: 50%;
+.footerdiv li {
+    margin: 10px 0;
+}
+
+.footerdiv ul a:nth-child(1) {
+    font-size: 18px;
+}
+
+.footlogo {
+    width: 150px;
     position: absolute;
     top: 50%;
-    left: 75%;
-    right: 0%;
-    transform: translate(-50%, -50%);
 }
 
-.footerlist {
-    width: 33.33%;
+.foot {
+    margin-left: 100px;
 }
 
+.footersection {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    margin: 0 auto;
+}
 
 /* footer */
