@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -14,98 +12,6 @@ body {
     width: 100%;
     font-family: 'Lato', sans-serif;
 }
-
-li {
-    list-style: none;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-
-
-.outermostcontainer {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0;
-    /* border: 1px solid red; */
-}
-
-.outercontainer {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-    /* border: 1px solid red; */
-
-}
-
-.container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.clearfix {
-    display: flow-root;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.fs24 {
-    font-size: 24px;
-}
-
-.fs16 {
-    font-size: 16px;
-}
-
-.fwreg {
-    font-weight: 400;
-}
-
-.fwmed {
-    font-weight: 500;
-}
-
-.fwbold {
-    font-weight: 700;
-}
-
-.white {
-    color: white;
-}
-
-
-
-.blue {
-    display: inline-block;
-    margin-top: 39px;
-    color: #006dfe;
-}
-
-/* small headings */
-.darkblue {
-    color: #102746;
-}
-
-.h2div a {
-   color:#006dfe;
-   position: relative;
-   top:8px;
-}
-
-
 
 .rb {
     outline: 2px solid red;
@@ -120,38 +26,65 @@ a {
     outline: 2px solid blue;
 }
 
-/* paragraphs */
-.fs16_fwreg_lh24 {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+
+li {
+    list-style: none;
 }
 
-
-
-/* benefits */
-.fs18_lh24 {
-    font-size: 18px;
-    line-height: 24px;
+a {
+    color: white;
+    text-decoration: none;
 }
 
+.outer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    /* border: 1px solid red; */
 
-/* footer */
-.fs18_fwmed_lh24 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
 }
 
-h2 {
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    /* border: 1px solid red; */
+
+}
+
+.clearfix {
+    display: flow-root;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* blue links */
+.blue {
+    display: inline-block;
+    margin-top: 39px;
+    color: #006dfe;
+}
+
+/* section headings */
+h2{
     color: #102746;
-
+    font-size: 35px;
 }
 
-h3 {
-    color: black;
+/* viewall btn */
+.view-all {
+   color:#006dfe;
+   position: relative;
+   top:15px;
 }
-
 
 
 /* header */
@@ -221,35 +154,42 @@ nav a {
     transform: translate(-50%, -50%);
 }
 
-.middle h1 {
+h1 {
+    color: white;
     width: 60%;
     font-size: 50px;
+    font-weight: 500;
 }
 
 .middle p {
+    color: white;
     width: 50%;
     margin-top: 22px;
+    line-height: 24px;
 }
 
 form {
     margin-top: 60px;
 }
 
+form div{
+    margin-right: 50px;
+}
+
 .forms::after {
     content: "";
     display: block;
     background-color: white;
-    width: 85%;
+    width: 100%;
     height: 2px;
 }
 
 label {
-    margin-right: 10px;
+    margin-right: 23px;
     color: white;
 }
 
 input {
-    margin-right: 50px;
     color: white;
     font-size: 18px;
     font-weight: 500;
@@ -260,7 +200,7 @@ input {
     background: transparent;
 }
 
-::placeholder {
+input::placeholder {
     color: white;
 }
 
@@ -272,17 +212,18 @@ input:focus {
     outline: none !important;
 }
 
-.btn {
+.btn{
     color: white;
-    background-color: #1b7dff;
     border-radius: 3px;
     border: none;
 }
 
 .lg {
+    background-color: #1b7dff;
     position: relative;
     top:5px;
     font-size: 24px;
+    font-weight: 500;
     padding: 15px 35px;
 }
 
@@ -294,6 +235,7 @@ button:hover {
 
 .benefits {
     width: 100%;
+    padding:100px 0;
     background-color: white;
     -webkit-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
@@ -303,8 +245,8 @@ button:hover {
 
 }
 
-.benefits h2 {
-    margin-bottom: 60px;
+.benefits-cards{
+    margin-top:60px;
 }
 
 .benefits p {
@@ -312,15 +254,6 @@ button:hover {
     font-weight: 400;
     line-height: 24px;
     margin-top: 30px;
-}
-
-.content {
-    width: 100%;
-}
-
-.benefits_card3 {
-    width: calc((100% - 260px / 3));
-    
 }
 
 .cards {
@@ -333,28 +266,14 @@ button:hover {
 }
 
 h4{
+    font-size: 18px;
     margin-top:37px;
 }
 
 .benefitsbox {
     text-align: left;
-    width: 280px;
-
+    width: calc((100% - 260px) / 3);
 }
-
-
-.sections {
-    width: 100%;
-    padding: 100px 0px;
-}
-
-
-
-.content .card6 {
-    width: calc(100% / 3);
-
-}
-
 
 .h2div h2::after {
     content: "";
@@ -368,12 +287,7 @@ h4{
 
 /* inspired section */
 
-.outer {
-    width: 100%;
-    /* font-size: 0; */
-}
-
-.outer h1 {
+.inspired p {
     font-size: 50px;
     font-weight: 700;
     position: absolute;
@@ -468,8 +382,10 @@ h4{
 
 
 h3 {
+    color:#102746;
     font-size: 30px;
     font-weight: 500;
+    line-height: 40px;
 }
 
 .inner {
@@ -535,22 +451,24 @@ h3 {
 .botbar {
     background-color: rgba(21, 24, 36, 0.6);
     color: white;
-    padding: 10px 0 10px 10px;
+    padding: 20px 25px 20px 25px;
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     left: 0;
     right: 0;
 }
 
+.bar p{
+    margin-left: 14px;
+}
+
 .botbar p {
-    margin-right: 20px;
     display: inline;
     color: white;
 }
 
 .botbar i {
     margin-left: 5px;
-
 }
 
 .hp6 {
@@ -558,8 +476,9 @@ h3 {
 }
 
 .sm {
+    background-color: #006dfe;
     margin-top: 31px;
-    padding: 10px 10px;
+    padding: 15px 20px;
 }
 
 .img1 {
@@ -627,36 +546,31 @@ h3 {
 
 footer,
 .footerdiv {
-
     background-color: #0e1d28;
-    height: 370px;
+    padding: 120px 0;
     position: relative;
     width: 100%;
     margin: 0 auto;
 
-}
 
-.footer a {
-    width: 20%;
 }
 
 .footerdiv li {
-    margin-top: 15px;
-}
-
-.foot ul a{
+    font-size: 16px;
+    margin-top: 10px;
+    color:white;
     line-height: 24px;
 }
 
-.footerdiv ul a:nth-child(1) {
+.foot ul li:nth-child(1) {
     font-size: 18px;
-    
+    font-weight: 500; 
 }
 
 .footlogo {
-    width: 130px;
+    width: 180px;
     position: absolute;
-    top: 30%;
+    top: 15%;
 }
 
 .foot {
