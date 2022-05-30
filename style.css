@@ -24,13 +24,7 @@ a {
     text-decoration: none;
 }
 
-p {
-    color: black;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 30px;
-}
+
 
 .outermostcontainer {
     width: 100%;
@@ -95,6 +89,8 @@ p {
 
 
 .blue {
+    display: inline-block;
+    margin-top: 39px;
     color: #006dfe;
 }
 
@@ -104,9 +100,9 @@ p {
 }
 
 .h2div a {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+   color:#006dfe;
+   position: relative;
+   top:8px;
 }
 
 
@@ -154,7 +150,6 @@ h2 {
 
 h3 {
     color: black;
-    margin: 0 0 26px 0;
 }
 
 
@@ -166,6 +161,7 @@ header {
     position: absolute;
     z-index: 1;
     margin-top: 40px;
+    color:black;
 }
 
 .logo {
@@ -178,18 +174,12 @@ nav {
     position: relative;
 }
 
-nav ul {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    bottom: -50%;
-    transform: translate(0%, -50%);
-}
-
 
 nav li {
     list-style: none;
     display: inline-block;
+    position: relative;
+    top:4px;
 }
 
 nav a {
@@ -213,10 +203,10 @@ nav a {
     background-size: 100% 100%;
     object-fit: contain;
     width: 100%;
-    height: 770px;
     margin: 0 auto;
-    /* height: 130vh; */
     /* height: 100vh; */
+    /* height: 130vh; */
+    height: 770px;
     /* height: 100%; */
     position: relative;
 }
@@ -237,7 +227,7 @@ nav a {
 
 .middle p {
     width: 50%;
-    /* margin: 20px 0; */
+    margin-top: 22px;
 }
 
 form {
@@ -249,7 +239,7 @@ form {
     display: block;
     background-color: white;
     width: 85%;
-    height: 3px;
+    height: 2px;
 }
 
 label {
@@ -289,8 +279,10 @@ input:focus {
 }
 
 .lg {
+    position: relative;
+    top:5px;
     font-size: 24px;
-    padding: 10px 25px;
+    padding: 15px 35px;
 }
 
 button:hover {
@@ -306,45 +298,42 @@ button:hover {
     -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.5);
     position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: translate(0%, 135%);
+    transform: translate(0%, -25%);
 
 }
 
 .benefits h2 {
-    margin: 0 0 60px 0;
+    margin-bottom: 60px;
 }
 
-.h2div {
-    position: relative;
-    margin: 20px 0;
+.benefits p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 30px;
 }
-
 
 .content {
     width: 100%;
 }
 
-.card3 {
+.benefits_card3 {
     width: calc((100% - 260px / 3));
+    
 }
 
 .cards {
     margin-right: 130px;
 }
 
-.card3 p {
-    margin-bottom: 50px;
-}
-
 .icons {
     width: 65px;
     height: 65px;
-    margin-bottom: 37px;
 }
 
+h4{
+    margin-top:37px;
+}
 
 .benefitsbox {
     text-align: left;
@@ -352,13 +341,10 @@ button:hover {
 
 }
 
-.section1 {
-    margin-top: 400px;
-}
 
 .sections {
     width: 100%;
-    padding: 50px 10px;
+    padding: 100px 0px;
 }
 
 
@@ -373,7 +359,8 @@ button:hover {
     content: "";
     display: block;
     background-color: #006dfe;
-    height: 3px;
+    margin-top: 7px;
+    height: 2px;
     width: 55%;
 }
 
@@ -389,9 +376,13 @@ button:hover {
     font-size: 50px;
     font-weight: 700;
     position: absolute;
-    bottom: 10%;
+    bottom: 7%;
     left: 5%;
     color: white;
+}
+
+.top{
+    margin-top: 40px;
 }
 
 .topby2 {
@@ -443,6 +434,10 @@ button:hover {
 
 
 /* zigzag section */
+
+.zigzag{
+ margin-top:131px;
+}
 
 .zig1 {
     width: 100%;
@@ -504,9 +499,9 @@ h3 {
 
 }
 
-.textdiv1 p,
-.textdiv2 p {
-    margin-bottom: 40px;
+.textdiv1 p, .textdiv2 p{
+    margin-top: 45px;
+    line-height: 24px;
 }
 
 /* zigzag section */
@@ -514,14 +509,22 @@ h3 {
 
 
 /* 6 pic layout */
+.topplaces{
+    margin-top:139px;
+}
+
+.topplaces p{
+    margin-top: 45px;
+    line-height: 24px;
+}
 
 .cards-top-row {
     width: 100%;
-    font-size: 0;
+    margin-top:54px;
 }
 
-.cards-bot-row {
-    margin-top: 58px;
+.cards-bot-row{
+    margin-top:58px;
 }
 
 .three {
@@ -559,31 +562,37 @@ h3 {
 }
 
 .img1 {
+   
     height: 377px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img1.png');
 }
 
 .img2 {
+    
     height: 377px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img2.png');
 }
 
 .img3 {
+    
     height: 377px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img3.png');
 }
 
 .img4 {
+    
     height: 377px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img4.png');
 }
 
 .img5 {
+    
     height: 377px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img5.png');
 }
 
 .img6 {
+    
     height: 377px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/img6.png');
 }
@@ -631,17 +640,22 @@ footer,
 }
 
 .footerdiv li {
-    margin: 10px 0;
+    margin-top: 15px;
+}
+
+.foot ul a{
+    line-height: 24px;
 }
 
 .footerdiv ul a:nth-child(1) {
     font-size: 18px;
+    
 }
 
 .footlogo {
-    width: 150px;
+    width: 130px;
     position: absolute;
-    top: 50%;
+    top: 30%;
 }
 
 .foot {
