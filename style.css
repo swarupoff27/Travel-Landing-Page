@@ -204,9 +204,10 @@ nav a {
     object-fit: contain;
     width: 100%;
     margin: 0 auto;
+    height: 130vh;
+    min-height:770px;
     /* height: 100vh; */
-    /* height: 130vh; */
-    height: 770px;
+    /* height: 770px; */
     /* height: 100%; */
     position: relative;
 }
